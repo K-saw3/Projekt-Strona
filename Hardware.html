@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprzęt komputerowy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>
+        function updateClock() {
+            let now = new Date();
+
+            let hours = now.getHours().toString().padStart(2, "0");
+            let minutes = now.getMinutes().toString().padStart(2, "0");
+            let seconds = now.getSeconds().toString().padStart(2, "0");
+
+            document.getElementById("clock").textContent =
+                hours + ":" + minutes + ":" + seconds;
+        }
+
+        setInterval(updateClock, 1000);
+        window.onload = updateClock;
+    </script>
+
+    <header>
+        <h1>IT Hardware and Software</h1>
+        <div id="clock">00:00:00</div>
+    </header>
+
+    <main>
+
+        <div class="info">
+            <h2>Sprzęt komputerowy na sprzedaż</h2>
+            <p>
+                Oferujemy wysokiej jakości sprzęt komputerowy
+                w atrakcyjnych cenach. Sprawdź naszą ofertę!
+            </p>
+        </div>
+
+        <div class="products">
+
+            <div class="product">
+                <h2>Komputer stacjonarny</h2>
+                <p>Wydajny komputer do pracy i gier.</p>
+                <h3>Cena: 3500 zł</h3>
+                <button>Kup teraz</button>
+            </div>
+
+            <div class="product">
+                <h2>Laptop</h2>
+                <p>Nowoczesny laptop do nauki i pracy.</p>
+                <h3>Cena: 2800 zł</h3>
+                <button>Kup teraz</button>
+            </div>
+
+            <div class="product">
+                <h2>Monitor</h2>
+                <p>Monitor Full HD o wysokiej jakości obrazu.</p>
+                <h3>Cena: 750 zł</h3>
+                <button>Kup teraz</button>
+            </div>
+
+            <div class="product">
+                <h2>Klawiatura</h2>
+                <p>Wygodna klawiatura mechaniczna.</p>
+                <h3>Cena: 250 zł</h3>
+                <button>Kup teraz</button>
+            </div>
+
+            <div class="product">
+                <h2>Mysz komputerowa</h2>
+                <p>Precyzyjna mysz do codziennego użytkowania.</p>
+                <h3>Cena: 120 zł</h3>
+                <button>Kup teraz</button>
+            </div>
+
+            <div class="product">
+                <h2>Router Wi-Fi</h2>
+                <p>Router zapewniający szybkie połączenie z internetem.</p>
+                <h3>Cena: 300 zł</h3>
+                <button>Kup teraz</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <aside id="sidebar">
+        <ul>
+            <li><a href="Main.html">Strona główna</a></li>
+            <li><a href="Software.html">Oprogramowanie</a></li>
+            <li><a href="About.html">O nas</a></li>
+        </ul>
+    </aside>
+
+
+</body>
+</html>

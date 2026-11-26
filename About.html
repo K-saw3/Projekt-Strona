@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function updateClock() {
+            let now = new Date();
+
+            let hours = now.getHours().toString().padStart(2, "0");
+            let minutes = now.getMinutes().toString().padStart(2, "0");
+            let seconds = now.getSeconds().toString().padStart(2, "0");
+
+            document.getElementById("clock").textContent =
+                hours + ":" + minutes + ":" + seconds;
+        }
+
+        setInterval(updateClock, 1000);
+        window.onload = updateClock;
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>IT Hardware and Software</h1>
+    </header>
+
+    <div id="clock">
+        00:00:00
+    </div>
+
+    <main>
+
+        <section class="info">
+
+            <h2>Dlaczego my?</h2>
+
+            <p>- Szybkie naprawy</p>
+            <p>- Atrakcyjne ceny</p>
+            <p>- Profesjonalna obsługa</p>
+            <p>- Szeroki wybór komputerów i innych urządzeń</p>
+
+        </section>
+
+        <section class="info">
+
+            <h2>Dane kontaktowe</h2>
+
+            <p>Email: ITSoftwareAndHardware@gmail.com</p>
+            <p>Telefon: 123 456 789</p>
+            <p>Godziny pracy: 8:00 - 17:00</p>
+
+        </section>
+            <aside id="sidebar">
+                <ul>
+                    <li><a href="Main.html">Strona Główna</a></li>
+                    <li><a href="Hardware.html">Sprzęt</a></li>
+                    <li><a href="Software.html">Oprogramowanie</a></li>
+                </ul>
+            </aside>
+    </main>
+    
+
+</body>
+</html>

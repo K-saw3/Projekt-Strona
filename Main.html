@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function updateClock() {
+            let now = new Date();
+
+            let hours = now.getHours().toString().padStart(2, "0");
+            let minutes = now.getMinutes().toString().padStart(2, "0");
+            let seconds = now.getSeconds().toString().padStart(2, "0");
+
+            document.getElementById("clock").textContent =
+                hours + ":" + minutes + ":" + seconds;
+        }
+
+        setInterval(updateClock, 1000);
+        window.onload = updateClock;
+    </script>
+
+    <header>
+        <h1>IT Hardware and Software</h1>
+        <div id="clock">
+            00:00:00
+        </div>
+    </header>
+
+    <main>
+
+        <div class="content1">
+            <div class="image">
+                <img src="stock1.png" alt="Naprawa sprzętu" class="zdj1">
+            </div>
+
+            <div class="text">
+                Zajmujemy się naprawami sprzętu elektronicznego jak komputery, laptopy i rutery w szybki i tani sposób.
+            </div>
+        </div>
+
+        <div class="content2">
+            <div class="text">
+                Oferujemy również sprzedaż oprogramowania i sprzętu komputerowego w atrakcyjnych cenach.
+            </div>
+
+            <div class="image">
+                <img src="stock2.png" alt="Sprzedaż sprzętu" class="zdj1">
+            </div>
+        </div>
+
+    </main>
+
+    <aside id="sidebar">
+        <ul>
+            <li><a href="Hardware.html">Sprzęt</a></li>
+            <li><a href="Software.html">Oprogramowanie</a></li>
+            <li><a href="About.html">O nas</a></li>
+        </ul>
+    </aside>
+
+</body>
+</html>
