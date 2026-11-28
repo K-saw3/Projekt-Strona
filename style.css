@@ -69,6 +69,19 @@ main {
     color: gray;
 }
 
+#sidebar a.cart-link {
+    background-color: #00CC66;
+    color: #1C1C1C;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#sidebar a.cart-link:hover {
+    background-color: #00AA55;
+    color: #1C1C1C;
+}
+
 #clock {
     position: absolute;
     top: 35px;
@@ -125,4 +138,25 @@ main {
 
 .product button:hover {
     background-color: #555555;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+#checkout-button {
+    padding: 12px;
+    margin: 5px;
+    background-color: #00CC66;
+    color: #1C1C1C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
 }
